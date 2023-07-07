@@ -1,0 +1,32 @@
+Ringkasan Materi tentang Bab4:Meminta Bantuan
+
+1.Mengenal perintah Manual/command man
+perintah man digunakan untuk mencari arti command yang akan dieksekusi
+cara penggunaan:man command,contoh:man ncal ->maka man akan mencari tau perintah ncal itu digunakan untuk apa
+
+2.Memahami tentang sinopsis suatu perintah/command
+  Ketika menggunakan suatu perintah tapi langsung terdapat pesan error walaupun perintah yang di masukan itu benar,
+maka kita harus menggunakan perintah man/manual untuk melihat lebih rinci perintah tersebut dimana didalamnya terdapat sinopsis perintah tersebut yang menjelaskan secara singkat
+
+3.Mengenal Section pada perintah man/Manual
+
+ Untuk melihat tentang penjelasan perintah man itu sendiri kita bisa jalankan perintah:man man ->artinya perintah man akan memperlihatkan manual tentang perintah man(man ke2) tersebut.
+Dan didalamnya terdapat 9section(bagian)dimana section itu menjelaskan tentang banyaknya program yang ada didalam linux.
+Contoh:misal kita mengetikan perintah man date,setelah muncul panduan/sinopsis manual perintah date akan muncul angka 1 dibagian pojok kanan atas.
+Dimana angka 1(satu) disamping perintah date itu menjelaskan bahwa date merupakan program perintah yang dapat dieksekusi
+
+4.Menggunakan Type,Which dan Help
+
+-Type
+perintah ini digunakan untuk bisa mengetahui jenis-jenis command/perintah yang ada didalam sistem linux.
+contoh:type ncal ->maka akan menghasilkan data bahwa ncal merupakan perintah yang bisa dieksekusi/executable program,
+dimana perintah yang bisa dieksekusi ini biasanya tersebut disimpan pada direktori /usr/bin, atau /bin, atau /usr/local/bin
+
+-Which
+Perintah ini digunakan untuk mencari tahu dimana program yang akan dieksekusi itu berada
+contoh:which cal->maka akan mencari tahu dimana letak perintah/command cal itu berada dan akan menghasilkan /usr/bin/cal
+
+-help
+perintah help akan mencari tahu tentang penjelasan perintah yang akan dieksekusi,perintah help ini biasanya digunakan untuk perintah yang sifatnya builtin bukan program excutable seperti perintah cd.
+Perintah help ini biasanya digunakan sebagai pengganti perintah man untuk mencari tahu penjelasan singkat/sinopsis terhadap program yang akan dijalankan/dieksekusi
+

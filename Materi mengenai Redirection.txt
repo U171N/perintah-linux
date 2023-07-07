@@ -1,0 +1,18 @@
+Bab.9 Materi mengenai Redirection
+
+1.Mengenal StdOutput
+Stdout, juga dikenal sebagai output standar, adalah deskriptor file default tempat suatu proses dapat menulis output. Dalam sistem operasi mirip Unix, seperti Linux, macOS X, dan BSD, stdout ditentukan oleh standar POSIX. Nomor deskriptor file defaultnya adalah 1. Di terminal, output standar default ke layar pengguna.
+Tujuan penggunaan stdOutput digunakan untuk menyimpan hasil eksekusi perintah yang kita jalankan supaya bisa diarsipkan.
+
+2.Mengenal stdInput
+Di Linux, stdin adalah aliran input standar. Ini menerima teks sebagai inputnya. Output teks dari perintah ke shell dikirimkan melalui aliran stdout (standard out). Pesan kesalahan dari perintah dikirim melalui aliran stderr (kesalahan standar).
+-contoh penerapan stdInput:
+cat <test.txt ->artinya membaca isi file hasil arsip stdOutput dengan menambahkan tanda kurang dari(<)untuk membedakan penggunaan stdInput dan argument ketika menjalankan perintah
+
+3.Menggabungkan antara StdInput dan StdOutput
+contoh:
+cat < bumi.txt > globe.txt ->artinya membuka file bumi.txt kemudian pindahkan kedalam file globe.txt
+
+
+4.Mengenal StdError
+Stderr, juga dikenal sebagai kesalahan standar, adalah deskriptor file default tempat suatu proses dapat menulis pesan kesalahan. Dalam sistem operasi mirip Unix, seperti Linux, macOS X, dan BSD, stderr ditentukan oleh standar POSIX. Nomor deskriptor file defaultnya adalah 2. Di terminal, kesalahan standar default ke layar pengguna.

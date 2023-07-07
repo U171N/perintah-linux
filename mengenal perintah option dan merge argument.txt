@@ -1,0 +1,13 @@
+-.Mengenal perintah Option/perintah tambahan
+
+Perintah option adalah perintah tambahan yang digunakan untuk mengerjakan perintah tertentu saja
+contoh:
+ncal -h -> -h disini artinya menghilangkan highlight/garis tebal pada tanggalan hari ini
+
+
+-.Cara menggabungkan perintah,argument,dan juga perintah tambahan dalam sekali eksekusi:
+contoh:
+1.ncal -3 -h ->artinya menampilkan 3(tiga)bulan dari bulan sekarang sampe tiga bulan selanjutnya dengan menggunakan argument -3 dan menghilangkan hightlight atau garis tebal dengan menggunakan perintah opsional -h.
+2. ncal -3hM
+
+

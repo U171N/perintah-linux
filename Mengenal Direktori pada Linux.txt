@@ -1,0 +1,35 @@
+Bab 5.Mengenal Direktori pada Linux
+
+1.M3engenal Direktori
+
+-. ~(Karakter Tildie) = digunakan untuk menandai bahwa sekarang berada didalam direktori home
+-. /(slish) = digunakan untuk menandai bahwa sekarang berada di dalam direktori root/puncak direktori pada sistem linux
+
+2.Mengenal Perintah ls
+
+Perintah ls sering digunakan untuk melihat daftar file/direktori dimana direktori yang kita gunakan saat ini/working direktori yang sedang aktif/digunakan
+contoh:misal kita berada pada direktori home,maka kita akan melihat daftar file/direktori lain yang berada didalam direktori home/direktori yang saat ini digunakan.Seperti akan menampilkan direktori Downloads,Desktop dll
+
+-.untuk melihat daftar direktori pada saat kita berada didalam direktori home,bisa gunakan perintah: ls /
+-.untuk melihat isi dari sebuah direktori lain,gunakan perintah: ls namadirektori,contoh ls Downloads ->maka akan menampilkan isi/file didalam Direktori Downloadws
+-.unutk menampilkan daftar file dan direktori secara lengkap gunakan perintah: ls -l
+-.untuk melihat file-file yang ada beserta file"yang tersembunyi gunakan perintah: ls -a
+-.untuk melihat daftar file secara lengkap dan menampilkan file yang tersembunyi gunakan perintah: ls -l -a
+-.untuk mengurutkan daftar file berdasarkan ukuran file dan menampilkan file secara lengkap serta menampilkan file yang tersembunyi gunakan perintah: ls -l -a --sort=size
+-.untuk melihat daftar file secara urut abjad gunakan perintah: ls -l --sort=extension atau ls -l -x
+3.menggunakan perintah cd/change direktori
+perintah cd digunakan untuk mengubah/masuk kedalam direktori lain dari direktori yang sedang kita jalankan/tempati
+-.untuk naik level direktori dari direktori yang sedang kita jalankan/tempati gunakan perintah: cd .. ->artinya kita ganti direktori yang berada dilevel atasnya daripada direktori yang sudah kita pilih/tempati sebelumnya
+contoh:misal kita berada di direktori Desktop,untuk ganti ke direktori diatasnya(direktori home) maka dengan perintah cd .. akan masuk ke direktori home(dimana direktori ini merupakan parent direktori/direktori induk terhadap direktori Desktop)
+
+-.untuk masuk ke direktori root gunakan perintah: cd /
+-.untuk masuk ke dalam direktori user biasa gunakan perintah: cd home/namausernya,contoh:cd /home/fahrudin
+-.untuk masuk ke dalam direktori home secara cepat,gunakan perintah: cd ~(karakter tilldie)
+
+4.menggunakan Absolute Path
+Absolute path merupakan sebuah jalur dimulai dari root ( / ) dan direktori yang berada dibawahnya.
+-untuk menggunakan absolute path jangan lupa diawali dengan tanda /(slish) ketika akan berpindah direktori
+contoh:ketika berada pada direktori home tapi ingin mengakses direktori media,maka harus menggunakan absolute path dikarenakan direktori media berada dipengguna root,oleh karena itu  ketika ingin masuk ke direktori media yang ada di sistem root perintahnya seperti ini: cd /media/
+
+5.ketika ingin masuk ke direktori sebelumnya bisa menggunakan cara spt ini
+cd ../namadirektori,contoh:cd ../downloads

@@ -1,0 +1,46 @@
+Bab.10 Materi tentang Piping(karakter garis tegak= | )
+
+`Piping` merupakan utility GNU/Linux yang dapat digunakan untuk mengarahkan sebuah output perintah menjadi masukan bagi perintah yang lain.
+Piping hanya bisa digunakan dengan kombinasi dua perintah antara perintah excutable program dan perintah built in,contoh perintah builtin spt perintah less,cat,tac,rev,tr,dll
+
+contoh penggunaan piping:
+ls /usr/bin | less ->artinya menampilkan isi direktori /usr/bin per paragraf karena perintah ls /usr/bin diarahkan menjadi masukan bagi perintah less/perintah kedua
+Note:
+piping tidak bisa digunakan untuk sesama perintah yg tidak langsung muncul,spt:cd,ls,dll
+perintah yang digunakan sebagai perintah masukan/perintah kedua merupakan perintah yang langsung mencetak tampilannya
+
+contoh penggunaan operator piping dan menggabungkan dengan standar Output:
+cat daftarbelanja.txt | rev > daftarbelanjaterbalik.txt
+artinya:
+kita akan memasukan isi pada file daftarbelanja.txt kedalam file daftarbelanjaterbalik.txt,namun sebelum itu kita akan membalik daftar isi yang ada didalam file daftarbelanja.txt
+
+-.Penggunaan perintah tr (tr = transform/mengubah)
+tr adalah perintah untuk menerjemahkan atau menghapus karakter. Meskipun sangat berguna, tr hanya dapat bekerja dengan karakter tunggal. Untuk pencocokan pola dan manipulasi string yang lebih kompleks, Anda harus menggunakan sed atau awk .
+
+contoh penerapan perintah tr:
+cat kalimat.txt | tr s S ->artinya merubah huruf s kecil yang mana huruf s tersebut merupakan isi pada file kalimat.txt kemudian diubah menjadi huruf S besar dengan menggunakan perintah tr dan dipadukan dengan operator piping( | atau garis tegak)
+
+Note:penggunaan perintah tr tidak bisa digunakan langsung harus digabungkan dengan operator piping
+
+contoh penerapan perintah tr untuk menghapus satu kata/karakter pada data yang ada disuatu file:
+cat kalimat.txt | tr -d s ->artinya menghapus kata s pada file kalimat.txt,untuk menghapus isi pada suatu file tambahkan argument -d pada peirntah tr
+
+contoh penerapan perintah tr untuk mengganti huruf kecil menjadi huruf besar:
+cat kalimat.txt | tr a-z A-Z 
+
+contoh penerapan perintah tr yang kompleks(menambahkan stdoutput,reguler expression):
+cat telepon.txt | tr -d a-z | tr -d A-Z | tr -d : > telp.txt
+artinya
+1.perintah tr pertama menghapus karakter yang menggunakan huruf kecil(penggunaan perintah tr -d a-z)
+2.perintah tr kedua menghapus karakter yang  menggunakan huruf besar(pada penggunaan perintah: tr -d A-Z)
+3.perintah tr ketiga menghapus tanda :(titik dua/regular expression) dan memasukannya kedalam file telp.txt atau stdoutput(pada penggunaan perintah: tr -d : > telp.txt)
+
+jadi file yang semula isinya:
+Joni: 0274 112233
+Siti: 0214 123456
+Edi: 0330 189011
+
+menjadi: ->dan ini sudah dipindah kedalam file telp.txt
+0274 112233
+0214 123456
+0330 189011

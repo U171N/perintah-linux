@@ -1,0 +1,33 @@
+Bab7.Mengenal perintah untuk print file teks/menampilkan isi dari sebuah file
+
+1.Menggunakan Perintah cat
+-.untuk menampilkan isi dari sebuah file lebih dari satu perintahnya seperti ini:cat file1 file2 dll,contoh:cat test.txt coba.txt
+-.perintah cat tidak bisa membuka file yang berformat graphic/gambar
+
+2.Menggunakan perintah Tac dan Rev
+Perintah Tac fungsinya hampir sama dengan cat,namun ketika menampilkan isi pada sebuah file maka urutannya akan terbalik(dari bawah/terakhir ke atas/pertama)
+Perintah Rev digunakan untuk memutar isi yang terdapat pada file secara horizontal
+
+3.Menggunakan perintah less
+Less adalah utilitas baris perintah yang menampilkan konten file atau output dari suatu perintah dalam satu halaman.Ini mirip dengan perintah more , tetapi memiliki fitur yang lebih maju dan memungkinkan Anda menavigasi maju dan mundur melalui file.
+Untuk menampilkan isi dari file berikutnya adalah dengan menggunakan keyboard spasi
+untuk menampilkan isi dari suatu file baris per baris menggunakan tombol enter
+Untuk menscroll seluruh isi dari suatu file bisa menggunakan arah panah atas dan bawah
+untuk mencari kata pada isi file bisa menggunakan tombol slish(/) diikuti dengan kata yang dicari,contoh:/test ->maka akan mencari kata test didlam file tsb
+untuk keluar dari file gunakan tombol q
+
+4.Menggunakan perintah head dan Tail
+Perintah head digunakan untuk menampilkan 10baris awal(secara default) pada isi suatu file
+Perintah tail digunakan untuk menampilkan 10baris terakhir(secara default) pada isi suatu file
+Untuk menggunakan perintah head/Tail sesuai dengan jumlah baris yang diinginkan perintahnya:tail -jumlahbaris namafile,contoh tail -3 test.txt ->artinya menampilkan isi dari file test.txt 3baris terakhir
+Untuk melihat isi suatu file dan melakukan edit bersamaan gunakan opsi -f,contoh:head -f test.txt ->untuk melakukan edit isi file secara langsung harus menggunakan 2tab terminal,satu untuk edit data dan satunya untuk melihat perubahan data suatu secara langsung
+
+5.Menggunakan perintah wc
+perintah wc memungkinkan Anda untuk menghitung jumlah baris, kata, dan byte dari setiap file yang ditentukan atau input standar dan mencetak hasilnya.
+contoh:96 814 5796 lorem.txt -> 96 artinya jumlah baris,814 artinya jumlah kata, 5796 jumlah byte yang ada di file lorem.txt
+Perintah tambahan pada perintah wc: -w artinya menghitung kata pada file,-l menghitung jumlah baris yang terdapat pada file
+
+
+6.Menggunakan perintah sort
+perintah sort pada linux digunakan mengurutkan isi suatu file dengan urutan yg sudah ditentukan sendiri/bisa dengan menggunakan opsi default(dari yang terbesar ke terkecil)
+untuk lebih lengkap mengenai perintah sort gunakan manual book dengan menggunakan perintah man

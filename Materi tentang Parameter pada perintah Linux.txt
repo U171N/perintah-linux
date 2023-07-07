@@ -1,0 +1,7 @@
+Materi tentang Parameter pada perintah Linux
+
+parameter adalah entitas yang menyimapn sebuah nilai.Parameter ditetapkan jika telah diberi nilai.
+contoh:
+ncal -A1 ->artinya memanggil calender saat ini dan satu bulan setelahnya,dimana untuk memanggil calender satu bulan selanjutnya harus menambahkan parameter 1 setelah perintah ncal diberikan perintah tambahan/option -A
+letak parameter sebuah perintah selalu berdekatan dengan perintah option/tambahan bukan perintah terpisah/argument
+

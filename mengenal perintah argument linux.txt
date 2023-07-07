@@ -1,0 +1,6 @@
+Mengenal Argument pada perintah linux(menggunakan Ubuntu OS)
+
+Argument merupakan sebuah perintah yang dijalankan secara spesifik,
+contoh ketika ingin mengetahui tanggal hari ini/sekarang bisa menggunakan perintah ncal(artinya=now on calendar/calendar sekarang),
+atau ketika ingin melihat tanggalan pada tahun tertentu bisa ketikan perintah:ncal tahun,contoh:ncal 2020
+Pada kedua contoh tersebut bisa diketahui bahwa perintah untuk menampilkan tanggalan/calendar adalah ncal,kemudian perintah selanjutnya seperti 2020 itu merupakan sebuah argument

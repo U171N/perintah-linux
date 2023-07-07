@@ -1,0 +1,24 @@
+Bab.6 Materi tentang sebuah file didalam sistem linux
+
+1.Cara mengetahui informasi sebuah(format,ukuran,dll)
+perintahnya: file namafile.formatfile,contoh file foto.png ->maka akan ditampilkan informasi tentang format file,ukuran file dan resolusi gambarnya
+
+2.Cara menghapus sebuah file dan Direktori
+-.untuk menghapus sebuah direktori yang kosong/blm ada isinya bisa gunakan perintah: rm -d namadirektori,contoh: rm -d dir1 
+-.untuk menghapus sebuah direktori yang didalamnya ada isinya bisa gunakan perintah: rm -r namadirektori,contoh:rm -r dirB ->maka akan menghpaus direktori dirB beserta isi/file didalamnya
+-.untuk menghapus beberapa file didalam direktori secara selektif/dipilih bisa gunakan perintah: rm -ri namadirektori,contoh: rm -ri dir3 ->setelah menekan enter akan muncul interaktif/persetujuan untuk menghapus sebuah file didalam direktori dir3 tsb berupa Yes/No question
+
+3.Cara memindahkan file sekaligus ke dalam direktori lain
+syntax untuk memindah file: mv namafile tujuandirektori(destination)
+contoh: mv 1.txt 2.txt dirA ->maka akan memindahkan kedua file tersebut kedalam direktori dirA.
+
+4.Cara memindahkan folder atau direktori kedalam direktori lain
+-.untuk memindahkan sebuah direktori kedalam direktori yang levelnya lebih tinggi bisa gunakan perintah: mv namadirektoriyangDipindah ..(titik 2x) contoh: mv dirA .. ->artinya memindahkan direktori dirA kedalam direktori diatasnya yang lebih tinggi dengan munggunakan ..(titik 2x tsb)
+-.untuk memindahkan beberapa direktori kedalam direktori lain bisa gunakan perintah:mv dir1 dir2 dir3 alamatDirtujuan contoh:mv dir1 dir2 dir3 dirA ->maka direktori dir1-3 akan dipindah kedalam direktori dirA
+-.untuk memindahkan direktori ke direktori home,perintahnya:mv dir1 ~(karakter tilldie) contoh:mv dirA ~ ->artinya memindahkan direktori dirA ke direktori home menggunakan karakter ~(tilldie)
+
+5.Mengubah nama file dan Direktori
+Untuk mengubah nama file maupun direktori bisa menggunakan perintah:mv
+Jika alamat tujuan pemindahan/Destination pada perintah mv tidak ditemukan maka perintah mv akan langsung merename/mengubah nama file atau Direktori tujuannya tsb menjadi nama file yang sudah diketikan.
+contoh:mv dira dirA ->misal kita ingin memindahkan direktori dira kedalam direktori dirA namun direktori dirA tidak ditemukan maka direktori dira tsb secara otomatis diubah namanya menjadi dirA
+
